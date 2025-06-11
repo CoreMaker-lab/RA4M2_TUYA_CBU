@@ -1,0 +1,212 @@
+T44C4 000:000.583   SEGGER J-Link V8.12f Log File
+T44C4 000:000.688   DLL Compiled: Feb 12 2025 13:34:40
+T44C4 000:000.701   Logging started @ 2025-06-11 14:53
+T44C4 000:000.714   Process: C:\Users\a8456\.eclipse\com.renesas.platform_1713588285\DebugComp\RA\e2-server-gdb.exe
+T44C4 000:000.731 - 0.727ms 
+T44C4 000:000.750 JLINK_GetDLLVersion()
+T44C4 000:000.763 - 0.014ms returns 81206
+T44C4 000:002.553 JLINK_OpenEx(...)
+T44C4 000:009.267   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T44C4 000:010.637   Firmware: J-Link V9 compiled May  7 2021 16:26:12
+T44C4 000:010.762   Decompressing FW timestamp took 94 us
+T44C4 000:018.268   Hardware: V9.60
+T44C4 000:018.306   S/N: 69667700
+T44C4 000:018.325   OEM: SEGGER
+T44C4 000:018.460   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T44C4 000:019.729   Bootloader: (FW returned invalid version)
+T44C4 000:021.278   TELNET listener socket opened on port 19021
+T44C4 000:021.392   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T44C4 000:021.691   WEBSRV Webserver running on local port 19080
+T44C4 000:021.792   Looking for J-Link GUI Server exe at: C:\Users\a8456\.eclipse\com.renesas.platform_1713588285\DebugComp\RA\ARM\Segger_v8.12.6\JLinkGUIServer.exe
+T44C4 000:021.868   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V818\JLinkGUIServer.exe
+T44C4 000:021.894   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V818\JLinkGUIServer.exe
+T44C4 000:040.164   J-Link GUI Server info: "J-Link GUI server V8.18 "
+T44C4 000:042.480 - 39.921ms returns "O.K."
+T44C4 000:042.618 JLINK_ExecCommand("ProjectFile=C:\Users\a8456\e2_studio\workspace\RA4M2_TUYA_CBU_Project2/RA4M2_TUYA_CBU_Project2.elf.jlink", ...). 
+T44C4 000:068.646 - 26.033ms returns 0x00
+T44C4 000:068.878 JLINK_ExecCommand("device=R7FA4M2AD", ...). 
+T44C4 000:069.011   Flash bank @ 0x0100A100: SFL: Parsing sectorization info from ELF file
+T44C4 000:069.022     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000010, .SectorStartAddr = 0x00000000
+T44C4 000:069.030   FlashBank @0x0100A100: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T44C4 000:069.217   Flash bank @ 0x60000000: SFL: Parsing sectorization info from ELF file
+T44C4 000:069.227     FlashDevice.SectorInfo[0]: .SectorSize = 0x00010000, .SectorStartAddr = 0x00000000
+T44C4 000:071.872   Device "R7FA4M2AD" selected.
+T44C4 000:072.150 - 3.261ms returns 0x00
+T44C4 000:072.162 JLINK_TIF_GetAvailable(...)
+T44C4 000:072.564 - 0.402ms 
+T44C4 000:072.578 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T44C4 000:074.096 - 1.518ms returns 0x00
+T44C4 000:074.107 JLINK_SetSpeed(4000)
+T44C4 000:074.427 - 0.321ms 
+T44C4 000:074.443 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:074.825   ConfigTargetSettings() start
+T44C4 000:074.843    J-Link Script File: Executing ConfigTargetSettings()
+T44C4 000:074.851   Configuring FlashDLNoRMWThreshold=0x200 in order to make sure that option bytes programming is done via read-modify-write
+T44C4 000:079.715   ConfigTargetSettings() end - Took 4.87ms
+T44C4 000:079.727   InitTarget() start
+T44C4 000:079.736    J-Link Script File: Executing InitTarget()
+T44C4 000:079.742   SWD selected. Executing JTAG -> SWD switching sequence.
+T44C4 000:082.717   DAP initialized successfully.
+T44C4 000:082.733   Determining TrustZone configuration...
+T44C4 000:084.550     Secure Debug: Enabled (SSD)
+T44C4 000:084.563   Determining currently configured transfer type by reading the AHB-AP CSW register.
+T44C4 000:085.948     --> Correct transfer type configured. Done.
+T44C4 000:085.965   InitTarget() end - Took 6.22ms
+T44C4 000:087.022   Found SW-DP with ID 0x6BA02477
+T44C4 000:090.371   DPIDR: 0x6BA02477
+T44C4 000:090.386   CoreSight SoC-400 or earlier
+T44C4 000:090.398   Scanning AP map to find all available APs
+T44C4 000:091.887   AP[2]: Stopped AP scan as end of AP map has been reached
+T44C4 000:091.899   AP[0]: AHB-AP (IDR: 0x84770001, ADDR: 0x00000000)
+T44C4 000:091.907   AP[1]: APB-AP (IDR: 0x54770002, ADDR: 0x01000000)
+T44C4 000:091.915   Iterating through AP map to find AHB-AP to use
+T44C4 000:093.214   AP[0]: Core found
+T44C4 000:093.226   AP[0]: AHB-AP ROM base: 0xE00FE000
+T44C4 000:093.875   CPUID register: 0x410FD214. Implementer code: 0x41 (ARM)
+T44C4 000:093.885   Feature set: Mainline
+T44C4 000:094.611   Cache: No cache
+T44C4 000:094.629   Found Cortex-M33 r0p4, Little endian.
+T44C4 000:095.481   -- Max. mem block: 0x00010A88
+T44C4 000:096.717   
+  ***** Warning: 
+T44C4 000:096.729   Cortex-M (ARMv8-M and later): The connected J-Link (S/N 69667700) uses an old firmware module that does not handle I/D-cache correctly. Proper debugging functionality cannot be guaranteed if cache is enabled
+T44C4 000:096.743   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:097.291   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T44C4 000:097.806   CPU_ReadMem(4 bytes @ 0xE0002000)
+T44C4 000:098.392   FPUnit: 8 code (BP) slots and 0 literal slots
+T44C4 000:098.405   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T44C4 000:099.002   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T44C4 000:099.513   CPU_ReadMem(4 bytes @ 0xE0001000)
+T44C4 000:100.017   CPU_ReadMem(4 bytes @ 0xE0001000)
+T44C4 000:100.594   CPU_ReadMem(4 bytes @ 0xE0001028)
+T44C4 000:101.150   CPU_ReadMem(4 bytes @ 0xE0001038)
+T44C4 000:101.704   CPU_ReadMem(4 bytes @ 0xE0001048)
+T44C4 000:102.272   CPU_ReadMem(4 bytes @ 0xE0001058)
+T44C4 000:102.827   CPU_WriteMem(4 bytes @ 0xE0001000)
+T44C4 000:103.391   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T44C4 000:103.899   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T44C4 000:104.472   CPU_ReadMem(4 bytes @ 0xE000ED88)
+T44C4 000:104.951   CPU_WriteMem(4 bytes @ 0xE000ED88)
+T44C4 000:105.454   CPU_ReadMem(4 bytes @ 0xE000EFB8)
+T44C4 000:105.927   Security extension: implemented
+T44C4 000:105.938   Secure debug: enabled
+T44C4 000:105.945   CoreSight components:
+T44C4 000:105.953   ROMTbl[0] @ E00FE000
+T44C4 000:105.962   CPU_ReadMem(64 bytes @ 0xE00FE000)
+T44C4 000:106.756   CPU_ReadMem(32 bytes @ 0xE0044FE0)
+T44C4 000:107.426   CPU_ReadMem(4 bytes @ 0xE0044FBC)
+T44C4 000:107.932   CPU_ReadMem(4 bytes @ 0xE0044FCC)
+T44C4 000:108.462   [0][0]: E0044000 CID B105900D PID 005BB906 DEVARCH 00000000 DEVTYPE 14 CTI (?)
+T44C4 000:108.473   CPU_ReadMem(32 bytes @ 0xE0047FE0)
+T44C4 000:109.092   CPU_ReadMem(4 bytes @ 0xE0047FBC)
+T44C4 000:109.597   CPU_ReadMem(4 bytes @ 0xE0047FCC)
+T44C4 000:110.103   [0][1]: E0047000 CID B105900D PID 003BB908 DEVARCH 00000000 DEVTYPE 12 CSTF
+T44C4 000:110.112   CPU_ReadMem(32 bytes @ 0xE0048FE0)
+T44C4 000:110.747   CPU_ReadMem(4 bytes @ 0xE0048FBC)
+T44C4 000:111.238   CPU_ReadMem(4 bytes @ 0xE0048FCC)
+T44C4 000:111.745   [0][2]: E0048000 CID B105900D PID 001BB961 DEVARCH 00000000 DEVTYPE 21 TMC
+T44C4 000:111.754   CPU_ReadMem(32 bytes @ 0xE0049FE0)
+T44C4 000:112.375   [0][3]: E0049000 CID B105F00D PID 001BB101 TSG
+T44C4 000:112.385   CPU_ReadMem(32 bytes @ 0xE0040FE0)
+T44C4 000:113.010   CPU_ReadMem(4 bytes @ 0xE0040FBC)
+T44C4 000:113.493   CPU_ReadMem(4 bytes @ 0xE0040FCC)
+T44C4 000:114.009   [0][4]: E0040000 CID B105900D PID 000BBD21 DEVARCH 00000000 DEVTYPE 11 TPIU
+T44C4 000:114.018   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T44C4 000:114.662   [0][5]: E00FF000 CID B105100D PID 000BB4C9 ROM Table
+T44C4 000:114.674   ROMTbl[1] @ E00FF000
+T44C4 000:114.683   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T44C4 000:115.484   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T44C4 000:116.137   CPU_ReadMem(4 bytes @ 0xE000EFBC)
+T44C4 000:116.656   CPU_ReadMem(4 bytes @ 0xE000EFCC)
+T44C4 000:117.204   [1][0]: E000E000 CID B105900D PID 000BBD21 DEVARCH 47702A04 DEVTYPE 00 Cortex-M33
+T44C4 000:117.215   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T44C4 000:117.898   CPU_ReadMem(4 bytes @ 0xE0001FBC)
+T44C4 000:118.494   CPU_ReadMem(4 bytes @ 0xE0001FCC)
+T44C4 000:118.971   [1][1]: E0001000 CID B105900D PID 000BBD21 DEVARCH 47701A02 DEVTYPE 00 DWT
+T44C4 000:118.980   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T44C4 000:119.619   CPU_ReadMem(4 bytes @ 0xE0002FBC)
+T44C4 000:120.199   CPU_ReadMem(4 bytes @ 0xE0002FCC)
+T44C4 000:120.718   [1][2]: E0002000 CID B105900D PID 000BBD21 DEVARCH 47701A03 DEVTYPE 00 FPB
+T44C4 000:120.766   CPU_ReadMem(32 bytes @ 0xE0000FE0)
+T44C4 000:121.423   CPU_ReadMem(4 bytes @ 0xE0000FBC)
+T44C4 000:121.927   CPU_ReadMem(4 bytes @ 0xE0000FCC)
+T44C4 000:122.425   [1][3]: E0000000 CID B105900D PID 000BBD21 DEVARCH 47701A01 DEVTYPE 43 ITM
+T44C4 000:122.436   CPU_ReadMem(32 bytes @ 0xE0041FE0)
+T44C4 000:123.050   CPU_ReadMem(4 bytes @ 0xE0041FBC)
+T44C4 000:123.551   CPU_ReadMem(4 bytes @ 0xE0041FCC)
+T44C4 000:124.095   [1][5]: E0041000 CID B105900D PID 002BBD21 DEVARCH 47724A13 DEVTYPE 13 ETM
+T44C4 000:124.104   CPU_ReadMem(32 bytes @ 0xE0042FE0)
+T44C4 000:124.744   CPU_ReadMem(4 bytes @ 0xE0042FBC)
+T44C4 000:125.279   CPU_ReadMem(4 bytes @ 0xE0042FCC)
+T44C4 000:125.824   [1][6]: E0042000 CID B105900D PID 000BBD21 DEVARCH 47701A14 DEVTYPE 14 CSS600-CTI
+T44C4 000:125.865   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:126.388   Data:  01 00 10 01
+T44C4 000:126.399   Debug reg: DHCSR
+T44C4 000:126.408 - 51.964ms returns 0
+T44C4 000:126.445 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T44C4 000:126.453   CPU_ReadMem(4 bytes @ 0x400E002C)
+T44C4 000:126.951   Data:  01 00 00 00
+T44C4 000:126.960 - 0.515ms returns 0
+T44C4 000:126.986 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:126.993   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:127.501   Data:  01 00 10 01
+T44C4 000:127.518   Debug reg: DHCSR
+T44C4 000:127.526 - 0.539ms returns 0
+T44C4 000:127.556 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:127.565   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:128.121   Data:  01 00 10 01
+T44C4 000:128.133   Debug reg: DHCSR
+T44C4 000:128.142 - 0.586ms returns 0
+T44C4 000:128.150 JLINK_ReadMem(0x400E001C, 0x4 Bytes, ...)
+T44C4 000:128.156   CPU_ReadMem(4 bytes @ 0x400E001C)
+T44C4 000:128.641   Data:  00 FC FF 00
+T44C4 000:128.650 - 0.500ms returns 0
+T44C4 000:128.660 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:128.666   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:129.200   Data:  01 00 10 01
+T44C4 000:129.211   Debug reg: DHCSR
+T44C4 000:129.219 - 0.559ms returns 0
+T44C4 000:129.226 JLINK_ReadMem(0x400E0018, 0x4 Bytes, ...)
+T44C4 000:129.233   CPU_ReadMem(4 bytes @ 0x400E0018)
+T44C4 000:129.745   Data:  00 80 FF 00
+T44C4 000:129.756 - 0.530ms returns 0
+T44C4 000:129.766 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:129.773   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:130.275   Data:  01 00 10 01
+T44C4 000:130.286   Debug reg: DHCSR
+T44C4 000:130.294 - 0.528ms returns 0
+T44C4 000:130.302 JLINK_ReadMem(0x400E0020, 0x4 Bytes, ...)
+T44C4 000:130.309   CPU_ReadMem(4 bytes @ 0x400E0020)
+T44C4 000:130.810   Data:  00 FC 00 00
+T44C4 000:130.826 - 0.523ms returns 0
+T44C4 000:130.836 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:130.843   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:131.389   Data:  01 00 10 01
+T44C4 000:131.402   Debug reg: DHCSR
+T44C4 000:131.410 - 0.574ms returns 0
+T44C4 000:131.418 JLINK_ReadMem(0x400E0028, 0x4 Bytes, ...)
+T44C4 000:131.425   CPU_ReadMem(4 bytes @ 0x400E0028)
+T44C4 000:131.938   Data:  00 FC 1F 00
+T44C4 000:131.956 - 0.537ms returns 0
+T44C4 000:131.969 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:131.978   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:132.502   Data:  01 00 10 01
+T44C4 000:132.515   Debug reg: DHCSR
+T44C4 000:132.523 - 0.554ms returns 0
+T44C4 000:132.532 JLINK_ReadMem(0x400E0024, 0x4 Bytes, ...)
+T44C4 000:132.539   CPU_ReadMem(4 bytes @ 0x400E0024)
+T44C4 000:133.053   Data:  00 E0 1F 00
+T44C4 000:133.061 - 0.529ms returns 0
+T44C4 000:133.071 JLINK_ReadMem(0xE000EDF0, 0x4 Bytes, ...)
+T44C4 000:133.078   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T44C4 000:133.569   Data:  01 00 10 01
+T44C4 000:133.579   Debug reg: DHCSR
+T44C4 000:133.588 - 0.516ms returns 0
+T44C4 000:133.595 JLINK_ReadMem(0x400E002C, 0x4 Bytes, ...)
+T44C4 000:133.602   CPU_ReadMem(4 bytes @ 0x400E002C)
+T44C4 000:134.124   Data:  01 00 00 00
+T44C4 000:134.132 - 0.537ms returns 0
+T44C4 000:136.363 JLINK_Close()
+T44C4 000:154.288 - 17.924ms
+T44C4 000:154.317   
+T44C4 000:154.323   Closed
